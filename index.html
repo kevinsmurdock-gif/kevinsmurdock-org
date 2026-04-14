@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Murdock — Building Healthcare. Giving Back.</title>
+<meta name="description" content="When COVID hit South Carolina, Kevin Murdock's companies gave first: free testing for every first responder, thousands of N95 masks donated, Q3 profit share with 450 employees, $51M investment creating 185 SC jobs.">
+<link rel="canonical" href="https://kevinsmurdock.com">
+<meta property="og:title" content="Kevin Murdock — Building Healthcare. Giving Back.">
+<meta property="og:description" content="Free COVID tests for every SC first responder. Thousands of N95s donated. 450 employees. $51M investment. 185 new jobs.">
+<meta property="og:url" content="https://kevinsmurdock.com">
+<meta property="og:type" content="profile">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#c49a2e;--gold2:#e0b84a;--cream:#f7f3ec;--white:#fff;--gray:#6b7280;--lightgray:#e8e4dd;--ink:#1a1a1a;--border:rgba(196,154,46,.25);--green:#1a5c3a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(196,154,46,.3);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:56px;}
+.nav-brand{font-family:'Libre Baskerville',serif;font-size:15px;font-weight:700;color:var(--white);text-decoration:none;}
+.nav-brand span{color:var(--gold2);}
+.nav-cta{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 16px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;transition:all .2s;}
+.nav-cta:hover{background:var(--gold);color:var(--navy);}
+.hero{min-height:100vh;background:var(--green);display:flex;align-items:center;padding:80px 40px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(196,154,46,.1),transparent 60%);}
+.hero-inner{max-width:1000px;margin:0 auto;width:100%;position:relative;z-index:1;}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold2);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold2);}
+h1{font-family:'Libre Baskerville',serif;font-size:clamp(40px,6vw,68px);font-weight:700;color:var(--white);line-height:1.05;margin-bottom:14px;}
+h1 .g{color:var(--gold2);font-style:italic;}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.65);max-width:620px;margin-bottom:32px;line-height:1.8;}
+.btn-primary{display:inline-block;padding:15px 36px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;transition:background .2s;}
+.btn-primary:hover{background:var(--gold2);}
+section{padding:80px 40px;}
+.si{max-width:1000px;margin:0 auto;}
+.sl{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.sl::before{content:'';width:20px;height:1px;background:var(--gold);}
+h2{font-family:'Libre Baskerville',serif;font-size:clamp(28px,3.5vw,40px);font-weight:700;color:var(--ink);line-height:1.15;margin-bottom:14px;}
+h2.lt{color:var(--white);}
+.intro{font-size:15px;color:var(--gray);max-width:700px;line-height:1.8;margin-bottom:44px;}
+.intro.lt{color:rgba(255,255,255,.55);}
+#impact{background:var(--navy);}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;}
+.stat-card{background:rgba(255,255,255,.04);border:1px solid rgba(196,154,46,.2);padding:24px;text-align:center;}
+.stat-card .n{font-family:'Libre Baskerville',serif;font-size:36px;font-weight:700;color:var(--gold2);margin-bottom:6px;}
+.stat-card .l{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.5);}
+#actions{background:var(--white);}
+.action-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.action-card{background:var(--cream);border:1px solid var(--lightgray);border-left:3px solid var(--gold);padding:28px;}
+.action-icon{font-size:32px;margin-bottom:14px;}
+.action-card h3{font-family:'Libre Baskerville',serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:10px;}
+.action-card p{font-size:14px;color:#444;line-height:1.75;}
+.action-card .credit{display:block;margin-top:12px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);}
+#quote{background:var(--navy2);padding:100px 40px;}
+.quote-card{max-width:800px;margin:0 auto;text-align:center;}
+.quote-card .mark{font-family:'Libre Baskerville',serif;font-size:72px;color:var(--gold);line-height:1;margin-bottom:-20px;}
+.quote-card blockquote{font-family:'Libre Baskerville',serif;font-size:22px;font-style:italic;color:var(--white);line-height:1.6;margin-bottom:20px;}
+.quote-card cite{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-style:normal;display:block;}
+#cta-bottom{background:var(--cream);text-align:center;padding:80px 40px;}
+#cta-bottom h2{margin-bottom:14px;}
+#cta-bottom p{font-size:15px;color:var(--gray);margin-bottom:28px;}
+footer{background:var(--navy);border-top:1px solid rgba(196,154,46,.15);padding:28px 40px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;}
+footer a{color:var(--gold2);text-decoration:none;}
+@media(max-width:768px){nav{padding:0 16px;}.hero{padding:72px 16px 48px;}section{padding:56px 16px;}.stat-grid,.action-grid{grid-template-columns:1fr;}#quote{padding:60px 20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://kevinsmurdock.com" class="nav-brand">Kevin S. <span>Murdock</span></a>
+  <a href="https://kevinsmurdock.com" class="nav-cta">Full Bio &rarr;</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Community &middot; Greenville, SC</div>
+    <h1>Building Healthcare.<br><span class="g">Giving Back.</span></h1>
+    <p class="hero-sub">When COVID-19 hit South Carolina, we didn't wait to be asked. Free testing for every first responder. Thousands of N95 masks donated. Profits shared with 450 employees. $51M invested back into SC &mdash; creating 185 new jobs.</p>
+    <a href="https://kevinsmurdock.com" class="btn-primary">Full Story &rarr;</a>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="si">
+    <div class="sl">By the Numbers</div>
+    <h2 class="lt">Measurable Impact on South Carolina</h2>
+    <p class="intro lt">The receipts. Every one documented in national press and on the SC Governor's official .gov site.</p>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="n">$51M</div><div class="l">Invested in SC</div></div>
+      <div class="stat-card"><div class="n">185</div><div class="l">Jobs Created</div></div>
+      <div class="stat-card"><div class="n">450</div><div class="l">Peak Employees</div></div>
+      <div class="stat-card"><div class="n">1000s</div><div class="l">N95s Donated</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="actions">
+  <div class="si">
+    <div class="sl">What We Did</div>
+    <h2>Five Commitments to South Carolina</h2>
+    <p class="intro">Documented by BioSpace, WYFF, MarketWatch, Yahoo Finance, Business Insider, Upstate Business Journal, and the SC Governor's office.</p>
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="action-icon">&#x1F692;</div>
+        <h3>Free COVID Testing for Every First Responder</h3>
+        <p>Free COVID-19 testing for every law enforcement officer, firefighter, and EMT/paramedic in the state of South Carolina. No questions, no invoicing, no cap.</p>
+        <span class="credit">BioSpace &middot; WYFF &middot; MarketWatch &middot; Yahoo News</span>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">&#x1F637;</div>
+        <h3>Thousands of N95 Masks Donated</h3>
+        <p>25% of our entire mask supply &mdash; thousands of N95 respirators given to SC police, fire departments, and hospital systems during the earliest, scarcest months of the pandemic. 4 hospital systems and 11 first responder units received donations.</p>
+        <span class="credit">Yahoo Finance &middot; Business Insider &middot; Physician Family</span>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">&#x1F4B0;</div>
+        <h3>Q3 Profit Share With All 450 Employees</h3>
+        <p>Authorized a substantial profit share for every PhD scientist, researcher, and lab technician who worked around the clock during the pandemic. No carve-outs. No executive skim. Everyone who showed up got a check.</p>
+        <span class="credit">Upstate Business Journal &middot; November 2020</span>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">&#x1F477;</div>
+        <h3>Hired Laid-Off Workers</h3>
+        <p>When Greenville restaurants and local businesses shuttered, we personally committed to hiring the people who lost their jobs &mdash; bringing them into the lab operation, training them up, paying them while the rest of the economy froze.</p>
+        <span class="credit">Personal commitment &middot; Documented hiring</span>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">&#x1F9EC;</div>
+        <h3>$51M Investment, 185 New SC Jobs</h3>
+        <p>In 2022, announced a $51 million capital investment creating 185 new jobs in Greenville County. Endorsed by the SC Secretary of Commerce. Announced at SCBIO 2022. Published on the SC Governor's official .gov website.</p>
+        <span class="credit">PRNewswire &middot; SC Governor (.gov) &middot; SCBIO 2022</span>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">&#x1F393;</div>
+        <h3>University COVID Testing &mdash; Clemson &amp; Furman</h3>
+        <p>Became the preferred COVID testing provider for SC universities and their student-athletes, keeping students safely in the classroom and on the field through the hardest stretch of the pandemic.</p>
+        <span class="credit">Preferred provider agreements &middot; 2020-2021</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="quote-card">
+    <div class="mark">&ldquo;</div>
+    <blockquote>From leading research and innovation to generously donating PPE for our front line workers, Diversified Medical Healthcare has been a valuable partner for South Carolina. Their efforts highlight the life-saving impact of American innovation, and I am proud of the work they have done.</blockquote>
+    <cite>&mdash; US Senator Tim Scott &middot; PRNewswire, April 2021</cite>
+  </div>
+</section>
+
+<section id="cta-bottom">
+  <div class="si">
+    <h2>The Full Story Is at Kevinsmurdock.com</h2>
+    <p>35+ press outlets. Senator visits. Attorney statement. Complete venture portfolio. All documented.</p>
+    <a href="https://kevinsmurdock.com" class="btn-primary">Full Story &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  Kevin S. Murdock &middot; Greenville, South Carolina &middot; <a href="https://kevinsmurdock.com">kevinsmurdock.com</a>
+</footer>
+
+</body>
+</html>
